@@ -26,11 +26,11 @@
         }
     }
     if($duration == "Monthly"){
-        $new_due_date = date("Y-m-d", strtotime("+1 month", strtotime($due_date)));
+        $new_due_date = date("Y-m-d", strtotime("+1 month", strtotime($date)));
     }elseif($duration == "Six months"){
-        $new_due_date = date("Y-m-d", strtotime("+6 months", strtotime($due_date)));
+        $new_due_date = date("Y-m-d", strtotime("+6 months", strtotime($date)));
     }else{
-        $new_due_date = date("Y-m-d", strtotime("+1 year", strtotime($due_date)));
+        $new_due_date = date("Y-m-d", strtotime("+1 year", strtotime($date)));
     }
 
     $data = array(

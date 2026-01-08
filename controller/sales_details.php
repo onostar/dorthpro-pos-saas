@@ -99,14 +99,15 @@
                 <input type="hidden" name="total_amount" id="total_amount" value="<?php echo $total_amount?>">
                 <input type="hidden" name="sales_invoice" id="sales_invoice" value="<?php echo $invoice?>">
                 <input type="hidden" name="store" id="store" value="<?php echo $store?>">
-                <div class="data">
+                <input type="hidden" name="customer_id" id="customer_id" value="0">
+                <!-- <div class="data">
                     <input type="hidden" name="customer_id" id="customer_id">
                     <label for="customer">Select customer <a href="javascript:void(0);" onclick="showAddCustomer('<?php echo $invoice?>')" title="Add new customer" style="color:#fff;background:var(--tertiaryColor); padding:5px; box-shadow:1px 1px 1px #222; border:1px solid #fff; border-radius:15px">Add New<i class="fas fa-plus-square"></i></a></label>
                     <input type="search" name="customer" id="customer" oninput="getCustomers(this.value)" placeholder="Enter customer name or phone number" autofocus>
                     <div class="search_results" id="search_results" style="position:relative;">
 
                     </div>
-                </div>
+                </div> -->
                 <div class="data">
                     <label for="payment_type">Payment options</label>
                     <select name="payment_type" id="payment_type" onchange="checkMode(this.value)">
